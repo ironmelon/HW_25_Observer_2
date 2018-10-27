@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		389F75404342645E983BD4F6 /* Pods_HW_25_Observer_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D11F53CED0DAB7AA0B93FFC4 /* Pods_HW_25_Observer_2.framework */; };
 		E35294972183EB3F003BCF2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35294962183EB3F003BCF2D /* AppDelegate.swift */; };
-		E35294992183EB3F003BCF2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35294982183EB3F003BCF2D /* ViewController.swift */; };
 		E352949C2183EB3F003BCF2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E352949A2183EB3F003BCF2D /* Main.storyboard */; };
 		E352949E2183EB53003BCF2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E352949D2183EB53003BCF2D /* Assets.xcassets */; };
 		E35294A12183EB53003BCF2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E352949F2183EB53003BCF2D /* LaunchScreen.storyboard */; };
+		E35294AA2183FCFC003BCF2D /* AddStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35294A92183FCFC003BCF2D /* AddStudentViewController.swift */; };
+		E35294AC2183FD15003BCF2D /* NamesStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35294AB2183FD15003BCF2D /* NamesStudentViewController.swift */; };
+		E35294AE2183FD30003BCF2D /* FacultyStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35294AD2183FD30003BCF2D /* FacultyStudentViewController.swift */; };
+		E35294B02183FD52003BCF2D /* DetailStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35294AF2183FD52003BCF2D /* DetailStudentViewController.swift */; };
+		E35294B22183FD83003BCF2D /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35294B12183FD83003BCF2D /* Student.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +25,15 @@
 		D11F53CED0DAB7AA0B93FFC4 /* Pods_HW_25_Observer_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HW_25_Observer_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35294932183EB3F003BCF2D /* HW_25_Observer_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_25_Observer_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35294962183EB3F003BCF2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E35294982183EB3F003BCF2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E352949B2183EB3F003BCF2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E352949D2183EB53003BCF2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E35294A02183EB53003BCF2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E35294A22183EB53003BCF2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E35294A92183FCFC003BCF2D /* AddStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentViewController.swift; sourceTree = "<group>"; };
+		E35294AB2183FD15003BCF2D /* NamesStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesStudentViewController.swift; sourceTree = "<group>"; };
+		E35294AD2183FD30003BCF2D /* FacultyStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacultyStudentViewController.swift; sourceTree = "<group>"; };
+		E35294AF2183FD52003BCF2D /* DetailStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStudentViewController.swift; sourceTree = "<group>"; };
+		E35294B12183FD83003BCF2D /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +86,42 @@
 		E35294952183EB3F003BCF2D /* HW_25_Observer_2 */ = {
 			isa = PBXGroup;
 			children = (
-				E35294962183EB3F003BCF2D /* AppDelegate.swift */,
-				E35294982183EB3F003BCF2D /* ViewController.swift */,
+				E35294B92183FE4E003BCF2D /* Models */,
+				E35294B72183FE28003BCF2D /* Controllers */,
 				E352949A2183EB3F003BCF2D /* Main.storyboard */,
+				E35294B32183FDA0003BCF2D /* Resources */,
+			);
+			path = HW_25_Observer_2;
+			sourceTree = "<group>";
+		};
+		E35294B32183FDA0003BCF2D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E35294962183EB3F003BCF2D /* AppDelegate.swift */,
 				E352949D2183EB53003BCF2D /* Assets.xcassets */,
 				E352949F2183EB53003BCF2D /* LaunchScreen.storyboard */,
 				E35294A22183EB53003BCF2D /* Info.plist */,
 			);
-			path = HW_25_Observer_2;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E35294B72183FE28003BCF2D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E35294A92183FCFC003BCF2D /* AddStudentViewController.swift */,
+				E35294AB2183FD15003BCF2D /* NamesStudentViewController.swift */,
+				E35294AD2183FD30003BCF2D /* FacultyStudentViewController.swift */,
+				E35294AF2183FD52003BCF2D /* DetailStudentViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E35294B92183FE4E003BCF2D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E35294B12183FD83003BCF2D /* Student.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,8 +231,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E35294992183EB3F003BCF2D /* ViewController.swift in Sources */,
+				E35294AA2183FCFC003BCF2D /* AddStudentViewController.swift in Sources */,
+				E35294B22183FD83003BCF2D /* Student.swift in Sources */,
+				E35294AC2183FD15003BCF2D /* NamesStudentViewController.swift in Sources */,
 				E35294972183EB3F003BCF2D /* AppDelegate.swift in Sources */,
+				E35294AE2183FD30003BCF2D /* FacultyStudentViewController.swift in Sources */,
+				E35294B02183FD52003BCF2D /* DetailStudentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
