@@ -14,7 +14,12 @@ class DetailStudentViewController: UIViewController {
     @IBOutlet private weak var secondNameLabel: UILabel!
     @IBOutlet private weak var facultyLabel: UILabel!
 
+    var student: Student?
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        firstNameLabel.text = student?.name
+        secondNameLabel.text = student?.lastName
+        facultyLabel.text = student?.faculty
     }
 }

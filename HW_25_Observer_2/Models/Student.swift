@@ -9,5 +9,7 @@
 import Foundation
 
 struct Student {
-
+    let name: String
+    let lastName: String
+    let faculty: String
 }
